@@ -25,14 +25,11 @@ $appName = APP_NAME;
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
 
     <!-- GLOBAL STYLING -->
     <link rel="stylesheet" href="./styling/style.css">
-
-    <!-- COMPONENTS CSS -->
-    <link rel="stylesheet" href="./styling/component/footer.css">
-    <link rel="stylesheet" href="./styling/component/404.css">
 
     <!-- DYNAMIC STYLE -->
     <?php if ($isAllowedPage && is_file($pageStyleFile)) : ?>
@@ -43,7 +40,7 @@ $appName = APP_NAME;
     <title><?= htmlspecialchars($appName, ENT_QUOTES, 'UTF-8') ?></title>
 </head>
 
-<body>
+<body class="bg-slate-950 text-slate-100 antialiased">
     <!-- Display Content -->
     <?php
     if ($isAllowedPage) {

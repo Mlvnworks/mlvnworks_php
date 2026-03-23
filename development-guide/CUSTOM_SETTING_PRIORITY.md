@@ -28,9 +28,11 @@ Keep each file, class, and function focused on one responsibility.
 
 Add project-specific rules below this section.
 
-Example:
-
 - Prefer reusable logic in `classes/` over repeating logic in `pages/`
 - Keep request handling inside `submissions/`
 - Keep configuration inside `.env` and `config.php`
 - Keep shared UI inside `components/`
+
+- always prioritize using tailwind in styling
+- you can use libraries for animation, icons etc...
+- use modern and Minimalism.
